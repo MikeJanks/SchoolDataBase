@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="../static/formpagestyle.css">
+    </head>
+    <body>
+        <div class="container">  
+            <form id="contact" action="/Process" method="post">
+            <h3>{{cred["username"]}}</h3>
+            <h2>{{cred["permission"]}}</h2>
+            <br>
+            <fieldset>
+                <h2>Add Course</h2>
+                <input placeholder="Course Number" type="text" tabindex="1"autofocus>
+                <input placeholder="Course Name" type="text" tabindex="2"autofocus>
+                <input placeholder="Amount of Credits" type="text" tabindex="3"autofocus>
+                <button name="submitAddCourse" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            <fieldset>
+                <h2>Remove Course</h2>
+                <input placeholder="Course Number or Name" type="text" tabindex="4">
+                <button name="submitRemoveCourse" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>                
+            </fieldset>
+            <fieldset>
+                <h2>Add New User</h2>
+                <input placeholder="First Name" name="addFirst" type="text" tabindex="5">
+                <input placeholder="Last Name" name="addLast" type="text" tabindex="6">
+                <input placeholder="Username" name="addUser" type="text" tabindex="7">
+                <input placeholder="Password" name="addPasswd" type="text" tabindex="8">
+                <select name="permission">
+                  <option value="student">student</option>
+                  <option value="teacher">teacher</option>
+                  <option value="admin">admin</option>
+                </select>
+                <button name="submitAddNewUser" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            </form>
+        </div>
+    </body>
+</html>

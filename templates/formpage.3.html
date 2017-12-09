@@ -1,0 +1,39 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" href="../static/formpagestyle.css">
+    </head>
+    <body>
+        <div class="container">  
+            <form id="contact" action="" method="post">
+            <h3>{{cred["username"]}}</h3>
+            <h2>{{cred["permission"]}}</h2>
+            <br>
+            <fieldset>
+                <h2>Change Grade</h2>
+                <input placeholder="Course Number" type="text" tabindex="1"autofocus>
+                <input placeholder="Student ID" type="text" tabindex="2"autofocus>
+                <select name="permission">
+                  <option value="A">student</option>
+                  <option value="B">teacher</option>
+                  <option value="C">admin</option>
+                  <option value="D">admin</option>
+                  <option value="F">admin</option>
+                </select>
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            <fieldset>
+                <h2>Course Add</h2>
+                <input placeholder="Course Number or Name" type="text" tabindex="4">
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>                
+            </fieldset>
+            <fieldset>
+                <h2>Course Drop</h2>
+                <input placeholder="Course Number or Name" type="text" tabindex="5">
+                <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            </fieldset>
+            </form>
+        </div>
+    </body>
+</html>
